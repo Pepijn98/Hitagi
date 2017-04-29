@@ -1,0 +1,17 @@
+event.channel.send_embed do |embed|
+  embed.title = "title ~~(did you know you can have markdown here too?)~~"
+  embed.colour = 0xe68814
+  embed.url = "https://discordapp.com"
+  embed.description = "this supports [named links](https://discordapp.com) on top of the previously shown subset of markdown. ```\nyes, even code blocks```"
+  embed.timestamp = Time.at(1493401556)
+
+  embed.image = Discordrb::Webhooks::EmbedImage.new(url: "https://cdn.discordapp.com/embed/avatars/0.png")
+  embed.thumbnail = Discordrb::Webhooks::EmbedThumbnail.new(url: "https://cdn.discordapp.com/embed/avatars/0.png")
+  embed.author = Discordrb::Webhooks::EmbedAuthor.new(name: "author name", url: "https://discordapp.com", icon_url: "https://cdn.discordapp.com/embed/avatars/0.png")
+  embed.footer = Discordrb::Webhooks::EmbedFooter.new(text: "footer text", icon_url: "https://cdn.discordapp.com/embed/avatars/0.png")
+
+  embed.add_field(name: "🤔", value: "some of these properties have certain limits...")
+  embed.add_field(name: "😱", value: "try exceeding some of them!")
+  embed.add_field(name: "🙄", value: "an informative error should show up, and this view will remain as-is until all issues are fixed")
+  embed.add_field(name: "<:thonkang:219069250692841473>", value: "???")
+end

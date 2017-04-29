@@ -1,0 +1,5 @@
+.rubocop.yml
+Gemfile
+Gemfile.lock
+/data/*
+/src/modules/commands/text.rb
