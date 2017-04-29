@@ -1,4 +1,3 @@
-```md
 [![Discord](https://discordapp.com/api/guilds/240059867744698368/embed.png)](https://discord.gg/Vf4ne5b)
 
 # Hitagi
@@ -21,4 +20,3 @@ Questions?
 Join the support server:
 
 [![Discord](https://discordapp.com/api/guilds/240059867744698368/embed.png?style=banner3)](https://discord.gg/Vf4ne5b)
-```
