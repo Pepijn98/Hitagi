@@ -14,7 +14,7 @@ module Bot
                   embed.add_field name: "Language:", value: "Ruby", inline:true
                   embed.add_field name: "Bot Version:", value: "v#{VERSION}", inline:true
                   embed.add_field name: "About:", value: "Fast and simple to use discord bot, created in ruby using discordrb.", inline:false
-                  embed.add_field name: "Website:", value: "https://kurozeroinc.xyz", inline:true
+                  embed.add_field name: "Website:", value: "https://hitagi.kurozero.xyz", inline:true
                   embed.add_field name: "Support Server:", value: "https://discord.gg/Vf4ne5b", inline:true
                 end
               end

@@ -7,6 +7,7 @@ module Bot
               usage: "#{BOT.prefix}invite") do |event|
         event << "Invite link: #{BOT.invite_url}"
         event << 'Support server -> https://discord.gg/Vf4ne5b'
+        event << "Hitagi's website -> https://hitagi.kurozero.xyz"
       end
     end
   end
