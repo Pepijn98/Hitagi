@@ -15,6 +15,9 @@ module Bot
                 onlineMembersNum = onlineMembers.count
                 roles = server.roles.map {|name| name.name}
                 rolesNum = roles.count
+                emotes = server.emoji
+                emoteCount = emotes.count
+                #puts emoteCount
                 event.channel.send_embed do |embed|
                   embed.color = 0x563055
                   embed.description = "#{server.id}"
@@ -28,6 +31,7 @@ module Bot
                   embed.add_field name: "AFK Timeout:", value: "#{afkTimeout} min", inline:true
                   embed.add_field name: "AFK Channel:", value: "<##{afkChannel}>", inline:true
                   embed.add_field name: "Roles:", value: "#{rolesNum}", inline:true
+                  embed.add_field name: "Emotes:", value: "#{emoteCount}", inline:true
                 end
               end
     end
