@@ -4,6 +4,9 @@ require 'json'
 require 'nokogiri'
 require 'open-uri'
 require 'yaml'
+require 'net/http'
+require 'uri'
+require 'net/https'
 
 module Bot
   Dir['src/modules/*.rb'].each { |mod| load mod }
@@ -39,4 +42,5 @@ module Bot
   BOT.bucket :limit, limit: 10, time_span: 1000, delay: 60
 
   BOT.run
+  
 end
