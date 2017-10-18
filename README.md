@@ -5,11 +5,7 @@ Hitagi is a bot created for the discord app https://discordapp.com
 
 Hitagi is created in [discordrb](https://github.com/meew0/discordrb) a Ruby library
 
-A website for Hitagi is coming soon
-
 Join her support server with https://discord.gg/Vf4ne5b
-
-You can invite the bot to your server with [Invite](https://discordapp.com/oauth2/authorize?&client_id=300435268689985538&scope=bot&permissions=66186303)
 
 Open-Source
 -
