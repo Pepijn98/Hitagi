@@ -1,5 +1,6 @@
 module Bot
   module DiscordCommands
+    # Invite command
     module Invite
       extend Discordrb::Commands::CommandContainer
       command(:invite,

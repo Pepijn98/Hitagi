@@ -1,5 +1,6 @@
 module Bot
   module DiscordCommands
+    # Blacklist command
     module Blacklist
       extend Discordrb::Commands::CommandContainer
       command(:blacklist,
@@ -26,6 +27,8 @@ module Bot
             BOT.unignore_user(id)
             event << "<@#{id}> was unblocked... Friends?"
           end
+        else
+          event << 'Nothing'
         end
       end
     end

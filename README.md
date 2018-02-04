@@ -1,18 +1,15 @@
-[![Discord](https://discordapp.com/api/guilds/240059867744698368/embed.png)](https://discord.gg/Vf4ne5b)
+[![Discord](https://discordapp.com/api/guilds/240059867744698368/embed.png)](https://discord.gg/p895czC)
 
 # Hitagi
 Hitagi is a bot created for the discord app https://discordapp.com
 
 Hitagi is created in [discordrb](https://github.com/meew0/discordrb) a Ruby library
 
-Join her support server with https://discord.gg/Vf4ne5b
+Join her support server with https://discord.gg/p895czC
 
-Open-Source
--
-Hitagi is open-source under the GNU GPLv3 License. If you use any of my code in your own project(s) you are required to credit me. See license for more details. (Open-Source does NOT mean that you can selfhost the bot!)
 
 Questions?
 -
 Join the support server:
 
-[![Discord](https://discordapp.com/api/guilds/240059867744698368/embed.png?style=banner3)](https://discord.gg/Vf4ne5b)
+[![Discord](https://discordapp.com/api/guilds/240059867744698368/embed.png?style=banner3)](https://discord.gg/p895czC)

@@ -1,5 +1,6 @@
 module Bot
   module DiscordCommands
+    # Restart command
     module Restart
       extend Discordrb::Commands::CommandContainer
       command(:restart,

@@ -1,5 +1,6 @@
 module Bot
   module DiscordCommands
+    # Asofterworld command
     module SofterWorld
       extend Discordrb::Commands::CommandContainer
       command(:asw,
@@ -10,7 +11,7 @@ module Bot
           embed.title = "a Softer World №#{n}"
           embed.image = Discordrb::Webhooks::EmbedImage.new(url: page.css('div#comicimg img')[0]['src'])
           embed.footer = Discordrb::Webhooks::EmbedFooter.new(text: page.css('div#comicimg img')[0]['title'])
-          embed.color = [0x399820, 0x1C5A71, 0xB57126, 0xAD2535].sample
+          embed.colour = [0x399820, 0x1C5A71, 0xB57126, 0xAD2535].sample
         end
       end
     end

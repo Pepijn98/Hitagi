@@ -1,5 +1,6 @@
 module Bot
   module DiscordCommands
+    # Whitelist command
     module Whitelist
       extend Discordrb::Commands::CommandContainer
       command(:whitelist,
@@ -26,6 +27,8 @@ module Bot
             BOT.set_user_permission(id, 0)
             event << "Bye bye, <@#{id}>!"
           end
+        else
+          event << 'Nothing'
         end
       end
     end

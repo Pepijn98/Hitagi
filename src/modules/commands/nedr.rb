@@ -1,5 +1,6 @@
 module Bot
   module DiscordCommands
+    # Nedroid command
     module Nedroid
       extend Discordrb::Commands::CommandContainer
       command(:nedr,
@@ -10,7 +11,7 @@ module Bot
           embed.title = "Nedroid - **#{page.css('div#comic img')[0]['title']}**"
           embed.image = Discordrb::Webhooks::EmbedImage.new(url: page.css('div#comic img')[0]['src'])
           embed.footer = Discordrb::Webhooks::EmbedFooter.new(text: page.css('div#comic img')[0]['alt']) if page.css('div#comic img')[0]['title'] != page.css('div#comic img')[0]['alt']
-          embed.color = [0xb6c114, 0x60c114, 0x14c11f, 0x14c175, 0x14b6c1, 0x1460c1].sample
+          embed.colour = [0xb6c114, 0x60c114, 0x14c11f, 0x14c175, 0x14b6c1, 0x1460c1].sample
         end
       end
     end

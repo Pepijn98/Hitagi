@@ -5,6 +5,7 @@ require 'json'
 
 module Bot
   module DiscordCommands
+    # Post command? wtf was I thinking...
     module Post
       extend Discordrb::Commands::CommandContainer
       command(:post,
@@ -13,8 +14,8 @@ module Bot
               usage: "#{BOT.prefix}post") do |event|
         break unless event.user.id == CONFIG.owner
         puts 'Posting server count...'
-        RestClient.post("https://discordbots.org/api/bots/300435268689985538/stats", "{'server_count': #{event.bot.servers.count}}", :'Authorization' => "#{CONFIG.dbotstoken}", :'Content-Type' => :json);
-        puts "Done!"
+        RestClient.post('https://discordbots.org/api/bots/300435268689985538/stats', "{'server_count': #{event.bot.servers.count}}", 'Authorization': CONFIG.dbotstoken, 'Content-Type': :json)
+        puts 'Done!'
       end
     end
   end

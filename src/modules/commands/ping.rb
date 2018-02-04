@@ -1,5 +1,6 @@
 module Bot
   module DiscordCommands
+    # Ping command
     module Ping
       extend Discordrb::Commands::CommandContainer
       command(:ping,

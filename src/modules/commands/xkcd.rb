@@ -1,5 +1,6 @@
 module Bot
   module DiscordCommands
+    # Xkcd command
     module Xkcd
       extend Discordrb::Commands::CommandContainer
       command(:xkcd,
@@ -10,7 +11,7 @@ module Bot
           embed.title = "XKCD - #{page.css('div#ctitle').text}"
           embed.image = Discordrb::Webhooks::EmbedImage.new(url: 'https:' + page.css('div#comic img')[0]['src'])
           embed.footer = Discordrb::Webhooks::EmbedFooter.new(text: page.css('div#comic img')[0]['title'])
-          embed.color = [0xB6C114, 0x60C114, 0x14C11F, 0x14C75, 0x14B6C1, 0x1460C1].sample
+          embed.colour = [0xB6C114, 0x60C114, 0x14C11F, 0x14C75, 0x14B6C1, 0x1460C1].sample
         end
       end
     end

@@ -8,6 +8,7 @@ require 'net/http'
 require 'uri'
 require 'net/https'
 
+# Bot is cute
 module Bot
   Dir['src/modules/*.rb'].each { |mod| load mod }
 
@@ -21,13 +22,17 @@ module Bot
                                             fancy_log: true,
                                             ignore_bots: true)
 
-  module DiscordCommands; end
+  # DiscordCommands duhh
+  module DiscordCommands
+  end
   Dir['src/modules/commands/*.rb'].each { |mod| load mod }
   DiscordCommands.constants.each do |mod|
     BOT.include! DiscordCommands.const_get mod
   end
 
-  module DiscordEvents; end
+  # DiscordEvents wow
+  module DiscordEvents
+  end
   Dir['src/modules/events/*.rb'].each { |mod| load mod }
   DiscordEvents.constants.each do |mod|
     BOT.include! DiscordEvents.const_get mod
@@ -42,5 +47,4 @@ module Bot
   BOT.bucket :limit, limit: 10, time_span: 1000, delay: 60
 
   BOT.run
-  
 end
